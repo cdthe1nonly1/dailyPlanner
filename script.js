@@ -1,6 +1,6 @@
 var today = new Date();
 var time = today.getHours();
-//console.log(time);
+console.log(time);
 var previousHour = time - 1;
 //console.log(previousHour);
 var nextHour = time + 1;
@@ -38,6 +38,15 @@ $(document).ready(function () {
   $("#16 .description").val(localStorage.getItem("16"));
   $("#17 .description").val(localStorage.getItem("17"));
 
+  function timeBlockColor() {
+    $(".time-block").each(function () {
+      var currentHour = parseInt($(this).attr("id"));
+      if (currentHour < time) {
+        $(this).addClass("past");
+      }
+    });
+  }
+  timeBlockColor();
   // var currentTime = today.getHours();
   // console.log(currentTime);
   // if("hour-" + currentTime !===  )
