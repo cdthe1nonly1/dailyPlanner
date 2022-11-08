@@ -1,5 +1,7 @@
+/* css styling for body and textarea */
+
 body {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -12,6 +14,7 @@ textarea {
   padding: 10px;
 }
 
+/* classes that have css styling attached to them */
 .description {
   white-space: pre-wrap;
 }
